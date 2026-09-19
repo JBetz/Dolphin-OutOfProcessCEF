@@ -14,13 +14,6 @@ ContextMenuCommand comment: ''!
 
 !ContextMenuCommand methodsFor!
 
-asDictionary
-	^Dictionary new
-		at: #index put: index;
-		at: #commandId put: commandId;
-		at: #label put: label;
-		yourself!
-
 commandId
 	^commandId!
 
@@ -40,7 +33,6 @@ label: anObject
 	label := anObject! !
 
 !ContextMenuCommand categoriesForMethods!
-asDictionary!public! !
 commandId!accessing!public! !
 commandId:!accessing!private! !
 index!accessing!public! !

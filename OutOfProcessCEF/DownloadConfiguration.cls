@@ -14,13 +14,6 @@ DownloadConfiguration comment: ''!
 
 !DownloadConfiguration methodsFor!
 
-asDictionary
-	^Dictionary new
-		at: #shouldContinue put: shouldContinue;
-		at: #downloadPath put: downloadPath;
-		at: #showDialog put: showDialog;
-		yourself!
-
 downloadPath
 	^downloadPath!
 
@@ -40,7 +33,6 @@ showDialog: anObject
 	showDialog := anObject! !
 
 !DownloadConfiguration categoriesForMethods!
-asDictionary!accessing!public! !
 downloadPath!accessing!public! !
 downloadPath:!accessing!private! !
 shouldContinue!accessing!public! !

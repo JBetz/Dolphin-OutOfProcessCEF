@@ -146,9 +146,10 @@ restart
 		start!
 
 send: aDictionary
-	| jsonBytes |
+	| jsonString jsonBytes |
 	socket ifNil: [^self].
-	jsonBytes := (STONJSON toString: aDictionary) asByteArray.
+	jsonString :=(STONJSON toString: aDictionary).
+	jsonBytes := jsonString asByteArray.
 	socket
 		writeInteger: jsonBytes size;
 		writeBytes: jsonBytes!
